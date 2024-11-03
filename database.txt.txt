@@ -1,0 +1,75 @@
+mysql> use microdb;
+Database changed
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| s_id    | varchar(20) | NO   | PRI | NULL    |       |
+| s_name  | varchar(20) | NO   |     | NULL    |       |
+| s_dob   | date        | YES  |     | NULL    |       |
+| s_phone | varchar(20) | YES  |     | NULL    |       |
+| s_mail  | varchar(20) | YES  |     | NULL    |       |
+| dept_id | varchar(10) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> desc faculty;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| f_id    | varchar(20) | NO   | PRI | NULL    |       |
+| f_name  | varchar(20) | NO   |     | NULL    |       |
+| f_phone | varchar(20) | YES  |     | NULL    |       |
+| f_mail  | varchar(20) | YES  |     | NULL    |       |
+| dept_id | varchar(10) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+mysql> desc subject;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| sub_id   | varchar(10) | NO   | PRI | NULL    |       |
+| sub_name | varchar(30) | YES  |     | NULL    |       |
+| dept_id  | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc mark;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| s_id   | varchar(10) | NO   | PRI | NULL    |       |
+| sub_id | varchar(10) | NO   | PRI | NULL    |       |
+| mark   | int         | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc attendance;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| s_id       | varchar(10) | NO   | PRI | NULL    |       |
+| sub_id     | varchar(10) | NO   | PRI | NULL    |       |
+| attendance | int         | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc login;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| User_id  | varchar(20) | NO   | PRI | NULL    |       |
+| password | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> desc department;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| dept_id   | varchar(20) | NO   | PRI | NULL    |       |
+| dept_name | varchar(30) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+2 rows in set (0.01 sec)
