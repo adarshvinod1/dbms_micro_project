@@ -62,3 +62,4 @@ This project is developed for demo purpose and it's not supposed to be used in r
 Any suggestion and feedback is welcome. You can mail us on
 - Ayush : ayushmadhavan183@gmail.com
 - Adarsh: adarshvnd2@gmail.com
+- Dinil: dinilps2004@gmail.com
